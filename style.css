@@ -36,7 +36,7 @@ html, body{
 }
 
 .b-header{
-    min-height: 10vh;
+    min-height: 10%;
     width: 100%;
     background: #fff3f3;
     display: block;
@@ -91,6 +91,8 @@ nav img{
 .container{
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .text-box{
@@ -98,12 +100,11 @@ nav img{
     height: 80%;
     color: black;
     position: absolute;
-    top: 20%;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 
 .text-box h1{
@@ -435,6 +436,10 @@ h3{
 
     /*-------------------------Header---------------------------*/
 
+    .header{
+        min-height: 90%;
+        width: 100%;
+    }
 
     nav img{
         width: 35px;
@@ -443,10 +448,14 @@ h3{
     .text-box {
         width: 80%;
         left: 10%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        top: 40%;
+        transform: translateY(-40%);
+        z-index: -1;
     }
 
     .text-box h1{
