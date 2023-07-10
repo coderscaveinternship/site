@@ -444,6 +444,11 @@ h3{
 
     /*-------------------------Header---------------------------*/
 
+    .header {
+        min-height: auto;
+        height: 100vh;
+    }
+
     nav img{
         width: 35px;
     }
