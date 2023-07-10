@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale= 1, user-scalable= no ">
+    <title>Contact - CodersCave</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!---------------Header-------------------->
+
+    <section class="con-header">
+        <nav class="navBar">
+            <a href="index.html"><img src="assets/media/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="internships.html">INTERNSHIPS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!---------------End of Header-------------------->
+
+    <section class="contact-us">
+        <h3>Contact Us</h3>
+        <hr>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Karuvalur Road, Kovilpalayam</h5>
+                        <p>Coimbatore, TamilNadu - 641107</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 959 702 8220</h5>
+                        <p>Monday to Saturday, 10AM - 6PM </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>contact@coderscave.in.net</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="assets/contact-form.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your Name" autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Enter email address" autocomplete="off" required>
+                    <input type="text" name="subject" placeholder="Enter the subject" autocomplete="off" required>
+                    <textarea placeholder="Message" name="message" rows="8"></textarea>
+                    <button type="submit" class="btn-contact">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------footer----------------------->
+
+    <section class="end-footer">
+
+        <div class="footer">
+            <div class="col-about">
+                <h3>About Us</h3>
+                <p>CodersCave is a project-based learning platform dedicated to shaping a strong tech future for all developers.</p>
+                <div class="footer-socialmedia">
+                    <a href=""><i class="fa fa-linkedin-square"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-facebook-square"></i></a>               
+                    <a href=""><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+            <div class="col-support">
+                <h3>Support</h3>
+                <a href="">FAQ</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Help</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="col-links">
+                <h3>Usefull Links</h3>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="internships.html">INTERNSHIPS</a>
+            </div>
+            <div class="col-contact">
+                <h3>Contact</h3>
+                <p><i class="fa fa-phone""> </i><a href="tel:=919597028220"> +91 959 702 8220</a></p>
+                <p><i class="fa fa-envelope""></i><a href="mailto: contact@coderscave.in.net"> contact@coderscave.in.net</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="made-with">
+            <p>Made with <i class="fa fa-heart-o""></i> by CodersCave</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2023 CodersCave. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!-----------------End of footer----------------->
+
+    <!--Script link-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
